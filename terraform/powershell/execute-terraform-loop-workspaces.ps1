@@ -1,3 +1,14 @@
+<#
+.Synopsis
+   Shoer description
+
+.DESCRIPTION
+   Long description
+
+.EXAMPLE
+   ./execute-terraform-loop-workspaces.ps1 -upstream
+#>
+
 Param (
   [string] $log_dir = ".\tf_output_logs",
   [string[]] $tf_workspaces_ignore = @(""),
