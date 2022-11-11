@@ -27,6 +27,6 @@ terraform workspace list |
       terraform workspace select $ws;
       Write-Host "$ws";
 
-      terraform apply -auto-approve 2>&1 > "$log_dir\apply_$ws.log"
+      terraform apply -no-color -auto-approve 2>&1 > "$log_dir\apply_$ws.log"
     }
   }
